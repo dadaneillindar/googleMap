@@ -23,6 +23,7 @@ public class MainActivity extends Activity {
 package tw.edu.tp.cksh.googlemap;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -39,6 +40,18 @@ public class MainActivity extends Activity {
     static final LatLng latLng = new LatLng(25.110480, 121.526229);
     private GoogleMap map;
 
+    public void onConfigurationChanged(Configuration newConfig){
+        super.onConfigurationChanged(newConfig);
+
+        // Checks the orientation of the screen
+        if(newConfig.orientation ==Configuration.ORIENTATION_LANDSCAPE){
+            
+        }else if(newConfig.orientation ==Configuration.ORIENTATION_PORTRAIT){
+            
+        }
+    }
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
