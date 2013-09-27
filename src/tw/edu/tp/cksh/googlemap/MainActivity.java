@@ -42,13 +42,6 @@ public class MainActivity extends Activity {
 
     public void onConfigurationChanged(Configuration newConfig){
         super.onConfigurationChanged(newConfig);
-
-        // Checks the orientation of the screen
-        if(newConfig.orientation ==Configuration.ORIENTATION_LANDSCAPE){
-            
-        }else if(newConfig.orientation ==Configuration.ORIENTATION_PORTRAIT){
-            
-        }
     }
     
     
@@ -62,6 +55,6 @@ public class MainActivity extends Activity {
         Marker marker_2 = map.addMarker(new MarkerOptions().position(new LatLng(25.115645, 121.519976)).title("ªüÀ¨®a").snippet("®¶µØµó2¸¹2¼Ó"));
        Circle circle = map.addCircle(new CircleOptions().center(new LatLng(25.110700, 121.526229)).radius(100).strokeColor(Color.RED).fillColor(Color.CYAN));
         // Move the camera instantly to latLng with a zoom of 16.
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(25.113000, 121.523000), 14));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(25.113000, 121.523000), 16));
     }
 }
